@@ -34,24 +34,30 @@ a:active, a:hover {
 
 a.menu {
  display:block;
- padding:3px 3px 3px 10px;
- /*border-top:1px solid #ffffff;*/
- border-top:1px solid #8b8b8b;
- font:12px Arial;
+ padding:5px 3px 5px 10px;
+ border-top:1px solid #ffffff;
+  font:12px Arial;
  text-align:left;
- background-color:#1b4690;
+ background-color:rgba(139, 139, 139, 1);
  text-decoration:none;
+}
+
+a.menu:active, a.menu:hover {
+ background-color:#514f50;
 }
 
 a.favorite {
  display:block;
  padding:10px 3px 10px 10px;
- /*border-top:1px solid #ffffff;*/
- border-top:1px solid #8b8b8b;
+ border-top:1px solid white;
  font:12px Arial;
  text-align:left;
- background-color:#1b4690;
+ background-color:rgba(27, 70, 144, 0.8);
  text-decoration:none;
+}
+
+a.favorite:active, a.favorite:hover {
+ background-color:rgba(27, 70, 144, 1);
 }
 
 a.menu_img, a.menu_img_top, div.menu_img {
@@ -65,16 +71,9 @@ a.menu_img, a.menu_img_top, div.menu_img {
 
 a.menu:link, a.menu:visited, a.favorite:link, a.favorite:visited {
  color:#ffffff;
-
  text-decoration:none; 
 }
 
-a.menu:active, a.menu:hover, a.favorite:active, a.favorite:hover {
- color:#ffffff;
- font-weight:bold;
- background-color:#514f50;
- /*background-color:#1b4690*/
-}
 
 /* ********** DIV **************************** */
 div {background-color:#FFFFFF;}
