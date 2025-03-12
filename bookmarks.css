@@ -43,22 +43,33 @@ a.menu {
  text-decoration:none;
 }
 
+a.favorite {
+ display:block;
+ padding:10px 3px 10px 10px;
+ /*border-top:1px solid #ffffff;*/
+ border-top:1px solid #8b8b8b;
+ font:12px Arial;
+ text-align:left;
+ background-color:#1b4690;
+ text-decoration:none;
+}
+
 a.menu_img, a.menu_img_top, div.menu_img {
  display:block;
- padding:2px;
+ padding:10px;
  text-align:center;
  text-decoration:none;
  border-top:1px solid #8b8b8b;
  /*height:30px;*/
 }
 
-a.menu:link, a.menu:visited {
+a.menu:link, a.menu:visited, a.favorite:link, a.favorite:visited {
  color:#ffffff;
 
  text-decoration:none; 
 }
 
-a.menu:active, a.menu:hover {
+a.menu:active, a.menu:hover, a.favorite:active, a.favorite:hover {
  color:#ffffff;
  font-weight:bold;
  background-color:#514f50;
