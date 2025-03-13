@@ -81,13 +81,13 @@ div {background-color:#FFFFFF;}
 /* left navigation bar */
 div#left {
   background-color:#dbdbdb;
-  width:130px;
+  width:174px;
   float:left;
 }
 
 div#right {
   background-color:#dbdbdb;
-  width:130px;
+  width:174px;
   float:right;
 }
 
@@ -96,7 +96,7 @@ div.leftmenu {
   border-left:1px solid #8b8b8b;
   border-right:2px solid #000;
   border-bottom:2px solid #000;
-  width:110px;
+  width:150px;
   /*margin:20px 10px 20px 20px;*/
   margin:10px 0px 10px 10px;
 }
@@ -115,17 +115,16 @@ div#content {
   /*float:right;*/
   float:left;
   padding:10px;
-  /*width:750;*/
-  width:745px;
+  width:750px;
 }
 
 /* Browserweiche IE --> Star-HTML-Hack (s. selfthml) */
-* html div#content {
-  border-left:1px solid #000000;
-  float:right;
-  padding:10px;
-  width:766px;
-}
+/* * html div#content { */
+  /* border-left:1px solid #000000; */
+  /* float:right; */
+  /* padding:10px; */
+  /* width:750px; */
+/* } */
 
 /* linkt to top */
 div.top, div.topdivide {
@@ -153,14 +152,14 @@ div.topdivide {
 }
 
 /* Browserweiche IE --> Star-HTML-Hack (s. selfthml) */
-* html .linkcontainer {
-  width:240px;
-  height:170px;
-  vertical-align:top;
-  padding-left:10px;
-  padding-right:10px;
-  margin-bottom:10px;
-}
+/* * html .linkcontainer { */
+  /* width:240px; */
+  /* height:170px; */
+  /* vertical-align:top; */
+  /* padding-left:10px; */
+  /* padding-right:10px; */
+  /* margin-bottom:10px; */
+/* } */
 
 .biglinkcontainer {
   width:220px;
@@ -181,14 +180,14 @@ div.topdivide {
 }
 
 /* Browserweiche IE --> Star-HTML-Hack (s. selfthml) */
-* html .biglinkcontainer {
-  width:240px;
-  height:240px;
-  vertical-align:top;
-  padding-left:10px;
-  padding-right:10px;
-  margin-bottom:10px;
-}
+/* * html .biglinkcontainer { */
+  /* width:240px; */
+  /* height:240px; */
+  /* vertical-align:top; */
+  /* padding-left:10px; */
+  /* padding-right:10px; */
+  /* margin-bottom:10px; */
+/* } */
 
 .biggerlinkcontainer {
   width:220px;
@@ -200,14 +199,14 @@ div.topdivide {
 }
 
 /* Browserweiche IE --> Star-HTML-Hack (s. selfthml) */
-* html .biggerlinkcontainer {
-  width:240px;
-  height:250px;
-  vertical-align:top;
-  padding-left:10px;
-  padding-right:10px;
-  margin-bottom:10px;
-}
+/* * html .biggerlinkcontainer { */
+  /* width:240px; */
+  /* height:250px; */
+  /* vertical-align:top; */
+  /* padding-left:10px; */
+  /* padding-right:10px; */
+  /* margin-bottom:10px; */
+/* } */
 
 .linktitle {
   font-weight:bold;
