@@ -21,6 +21,12 @@ img {
   border:0px solid #000000;
 }
 
+img.favicon {
+  padding-right: 8px; 
+  vertical-align:middle;
+  width:20px;
+}
+
 /* ********** LINKS ************************** */
 a:link, a:visited, a:active, a:hover {
   text-decoration:underline;
