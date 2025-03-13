@@ -42,7 +42,7 @@ a.menu {
  display:block;
  padding:5px 3px 5px 10px;
  border-top:1px solid #ffffff;
-  font:12px Arial;
+ font:12px Arial;
  text-align:left;
  background-color:rgba(139, 139, 139, 1);
  text-decoration:none;
@@ -72,7 +72,6 @@ a.menu_img, a.menu_img_top, div.menu_img {
  text-align:center;
  text-decoration:none;
  border-top:1px solid #8b8b8b;
- /*height:30px;*/
 }
 
 a.menu:link, a.menu:visited, a.favorite:link, a.favorite:visited {
@@ -84,17 +83,53 @@ a.menu:link, a.menu:visited, a.favorite:link, a.favorite:visited {
 /* ********** DIV **************************** */
 div {background-color:#FFFFFF;}
 
-/* left navigation bar */
-div#left {
-  background-color:#dbdbdb;
-  width:174px;
-  float:left;
+/* responsive layout */
+div#responsive {
+  width: 100%;
+  max-width: 1120px;
+  margin:0px auto;
+  text-align:left;
+  background-color:#dbdbdb;  
+  
+  display:grid;
+  grid-template-columns: 174px auto 174px;
+  place-content: end space-between;
 }
 
+/* left column */
+div#left {
+  background-color:#dbdbdb;
+  /* width: 100%; */
+  /* max-width: 174px; */
+  /* float:left; */
+}
+
+/* right column */
 div#right {
   background-color:#dbdbdb;
-  width:174px;
-  float:right;
+  /* width: 100%; */
+  /* max-width: 174px; */
+  /* float:right; */
+
+}
+/* content */
+div#content {
+  border-left:1px solid #000000;
+  border-right:1px solid #000000;
+  padding:10px;
+  /* width: 100%; */
+  /* max-width: 700px; */
+}
+
+div.grid-container {
+  display:grid;
+  /* grid-template-columns: auto auto auto; */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  /* justify-content:start space-evenly; */
+  /* grid-template-rows: auto auto; */
+  align-content: space-evenly;
+  gap:50px;
 }
 
 /* left navigation bar menu container */
@@ -102,40 +137,17 @@ div.leftmenu {
   border-left:1px solid #8b8b8b;
   border-right:2px solid #000;
   border-bottom:2px solid #000;
-  width:150px;
+  width: 100%;
+  max-width: 150px;  
   /*margin:20px 10px 20px 20px;*/
   margin:10px 0px 10px 10px;
 }
 
-div.validatormenu {
-  background-color:#dbdbdb;
-	width:110px;
-  /*margin:20px 10px 20px 20px;*/
-  margin:10px 0px 10px 10px;
-}
-
-/* content */
-div#content {
-  border-left:1px solid #000000;
-  border-right:1px solid #000000;
-  /*float:right;*/
-  float:left;
-  padding:10px;
-  width:750px;
-}
-
-/* Browserweiche IE --> Star-HTML-Hack (s. selfthml) */
-/* * html div#content { */
-  /* border-left:1px solid #000000; */
-  /* float:right; */
-  /* padding:10px; */
-  /* width:750px; */
-/* } */
-
-/* linkt to top */
+/* link to top */
 div.top, div.topdivide {
-  display:block;
+  /* display:block; */
   padding-bottom:5px;
+  padding-right:5px;
   clear:left;
   text-align:right;
 }
@@ -145,74 +157,16 @@ div.topdivide {
   border-bottom:1px solid #000;
 }
 
-
 /* standard link container */
-/* width:220px, block items */
 .linkcontainer {
-  width:220px;
-  height:190px;
+  /* width: 100%; */
+  /* max-width: 220px; */
+  /* height:190px; */
   vertical-align:top;
   padding-left:10px;
   padding-right:10px;
   margin-bottom:10px;
 }
-
-/* Browserweiche IE --> Star-HTML-Hack (s. selfthml) */
-/* * html .linkcontainer { */
-  /* width:240px; */
-  /* height:170px; */
-  /* vertical-align:top; */
-  /* padding-left:10px; */
-  /* padding-right:10px; */
-  /* margin-bottom:10px; */
-/* } */
-
-.biglinkcontainer {
-  width:220px;
-  height:230px;
-  vertical-align:top;
-  padding-left:10px;
-  padding-right:10px;
-  margin-bottom:10px;
-}
-
-.smalllinkcontainer {
-  width:220px;
-  height:150px;
-  vertical-align:top;
-  padding-left:10px;
-  padding-right:10px;
-  margin-bottom:10px;
-}
-
-/* Browserweiche IE --> Star-HTML-Hack (s. selfthml) */
-/* * html .biglinkcontainer { */
-  /* width:240px; */
-  /* height:240px; */
-  /* vertical-align:top; */
-  /* padding-left:10px; */
-  /* padding-right:10px; */
-  /* margin-bottom:10px; */
-/* } */
-
-.biggerlinkcontainer {
-  width:220px;
-  height:250px;
-  vertical-align:top;
-  padding-left:10px;
-  padding-right:10px;
-  margin-bottom:10px;
-}
-
-/* Browserweiche IE --> Star-HTML-Hack (s. selfthml) */
-/* * html .biggerlinkcontainer { */
-  /* width:240px; */
-  /* height:250px; */
-  /* vertical-align:top; */
-  /* padding-left:10px; */
-  /* padding-right:10px; */
-  /* margin-bottom:10px; */
-/* } */
 
 .linktitle {
   font-weight:bold;
@@ -237,37 +191,4 @@ div.topdivide {
   padding:2px 5px;
   font-weight:bold;
   text-align:center;
-}
-
-.validator {
-  background-color:#dbdbdb;	
-  display:block;	
-  margin:0px;
-/*  padding:2px 5px;*/
-	
-}
-
-/* large link container */
-/* width:660px, inline items */
-.largelinkcontainer {
-  width:660px;
-  height:60px;
-  vertical-align:top;
-  padding-left:10px;
-  padding-right:10px;
-  
-}
-
-.largelinktitle {
-  font-weight:bold;
-  text-align:left;
-  margin-top:5px;
-  margin-bottom:10px;
-}
-
-.largelinkitem {
-  display:inline;
-  margin:0px;
-  padding:1px 3px;
-  text-align:left;
 }
