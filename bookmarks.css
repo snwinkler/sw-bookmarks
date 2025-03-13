@@ -212,24 +212,27 @@ div.topdivide {
  }
 }
 
-@media only screen and (min-height: 926px) and (orientation: portrait) {
+/* iphone 13 max pro */
+@media only screen and (min-width: 428px) {
  a.menu, a.favorite {
  font-size:100%;
  }
 
  div#responsive {
   grid-template-columns: auto auto auto;
-  place-content: center;
+  justify-content:center;
  }
 
- div#right {
-  margin-right:0px;
- } 
- div#content {
- font-size:100%;
- grid-area: 2 / 1 / 2 / span 2;
- margin-left:10px;
- margin-right:0px;
+ div#left, div#right {
+  margin:0px;
+  padding:0px;
+ }
+ 
+ div#content {	
+  font-size:100%;
+  grid-area: 2 / 1 / 2 / span 2;
+  margin-left:10px;
+  margin-right:10px;
  }
 
  .linkitem {
@@ -239,4 +242,37 @@ div.topdivide {
  div.grid-container {
   grid-template-columns: 1fr;
  } 
+}
+
+/* iphone 15 */
+@media only screen and (min-width: 393px) {
+ a.menu, a.favorite {
+ font-size:100%;
+ }
+
+ div#responsive {
+  grid-template-columns: auto auto auto;
+  /* place-content: end  ; */
+  justify-content:center;
+ }
+
+ div#left, div#right {
+  margin:0px;
+  padding:0px;
+ } 
+ 
+ div#content {	
+  font-size:100%;
+  grid-area: 2 / 1 / 2 / span 2;
+  margin-left:10px;
+  margin-right:10px;
+ }
+
+ .linkitem {
+  padding-bottom:10px;
+ }
+
+ div.grid-container {
+  grid-template-columns: 1fr;
+ }	
 }
