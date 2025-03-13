@@ -213,13 +213,27 @@ div.topdivide {
 }
 
 @media (max-width: 480px) {
- body, h1, h2 {
- font-size:150%;
- }
  a.menu, a.favorite {
- font-size:12px;
+ font-size:100%;
  }
+
+ div#responsive {
+  grid-template-columns: auto auto auto;
+ }
+
+ div#right {
+  margin-right:15px;
+ } 
+ div#content {
+ font-size:100%;
+ grid-area: 2 / 1 / 2 / span 2;
+ }
+
  .linkitem {
-  padding-bottom:15px;
+  padding-bottom:10px;
  }
+
+ div.grid-container {
+  grid-template-columns: 1fr;
+ } 
 }
