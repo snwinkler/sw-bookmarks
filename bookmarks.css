@@ -212,21 +212,24 @@ div.topdivide {
  }
 }
 
-@media (max-width: 480px) {
+@media only screen and (min-height: 926px) and (orientation: portrait) {
  a.menu, a.favorite {
  font-size:100%;
  }
 
  div#responsive {
   grid-template-columns: auto auto auto;
+  place-content: center;
  }
 
  div#right {
-  margin-right:15px;
+  margin-right:0px;
  } 
  div#content {
  font-size:100%;
  grid-area: 2 / 1 / 2 / span 2;
+ margin-left:10px;
+ margin-right:0px;
  }
 
  .linkitem {
