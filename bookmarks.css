@@ -215,7 +215,11 @@ div.topdivide {
 /* iphone 13 max pro */
 /* @media only screen and (min-width: 428px) { */
 /* @media only screen and (min-height: 926px) and (orientation: portrait) { */
-@media only screen and (max-device-width: 428px) {	
+@media only screen 
+  and (min-device-width: 428x) 
+  and (max-device-width: 926px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
  a.menu, a.favorite {
  font-size:100%;
  }
@@ -249,7 +253,11 @@ div.topdivide {
 /* iphone 15 */
 /* @media only screen and (min-width: 393px) { */
 /* @media only screen and (min-height: 852px) and (orientation: portrait) { */
-@media only screen and (max-device-width: 393px) {	
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
  a.menu, a.favorite {
  font-size:100%;
  }
