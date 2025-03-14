@@ -215,40 +215,40 @@ div.topdivide {
 /* iphone 13 max pro */
 /* @media only screen and (min-width: 428px) { */
 /* @media only screen and (min-height: 926px) and (orientation: portrait) { */
-/* @media only screen  */
-      /* and (device-width: 428px)  */
-      /* and (device-height: 926px)  */
-      /* and (-webkit-device-pixel-ratio: 3)  */
-	  /* and (orientation: portrait) { */
-/* } a.menu, a.favorite { */
- /* font-size:100%; */
- /* } */
+@media only screen 
+      and (device-width: 428px) 
+      and (device-height: 745px) 
+      and (-webkit-device-pixel-ratio: 3) 
+	  and (orientation: portrait) {
+} a.menu, a.favorite {
+ font-size:100%;
+ }
 
- /* div#responsive { */
-  /* grid-template-columns: auto auto auto; */
-  /* justify-content:center; */
- /* } */
+ div#responsive {
+  grid-template-columns: auto auto auto;
+  justify-content:center;
+ }
 
- /* div#left, div#right { */
-  /* margin:0px; */
-  /* padding:0px; */
- /* } */
+ div#left, div#right {
+  margin:0px;
+  padding:0px;
+ }
  
- /* div#content {	 */
-  /* font-size:100%; */
-  /* grid-area: 2 / 1 / 2 / span 2; */
-  /* margin-left:10px; */
-  /* margin-right:10px; */
- /* } */
+ div#content {	
+  font-size:100%;
+  grid-area: 2 / 1 / 2 / span 2;
+  margin-left:10px;
+  margin-right:10px;
+ }
 
- /* .linkitem { */
-  /* padding-bottom:10px; */
- /* } */
+ .linkitem {
+  padding-bottom:10px;
+ }
 
- /* div.grid-container { */
-  /* grid-template-columns: 1fr; */
- /* }  */
-/* } */
+ div.grid-container {
+  grid-template-columns: 1fr;
+ } 
+}
 
 /* iphone 15 */
 @media only screen 
