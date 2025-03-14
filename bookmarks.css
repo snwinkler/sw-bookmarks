@@ -216,11 +216,10 @@ div.topdivide {
 /* @media only screen and (min-width: 428px) { */
 /* @media only screen and (min-height: 926px) and (orientation: portrait) { */
 @media only screen 
-  and (min-device-width: 428x) 
-  and (max-device-width: 926px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
- a.menu, a.favorite {
+      and (device-width: 428px) 
+      and (device-height: 926px) 
+      and (-webkit-device-pixel-ratio: 3) {
+} a.menu, a.favorite {
  font-size:100%;
  }
 
@@ -254,10 +253,9 @@ div.topdivide {
 /* @media only screen and (min-width: 393px) { */
 /* @media only screen and (min-height: 852px) and (orientation: portrait) { */
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
+      and (device-width: 393px) 
+      and (device-height: 852px) 
+      and (-webkit-device-pixel-ratio: 3) { 
  a.menu, a.favorite {
  font-size:100%;
  }
