@@ -218,7 +218,8 @@ div.topdivide {
 @media only screen 
       and (device-width: 428px) 
       and (device-height: 926px) 
-      and (-webkit-device-pixel-ratio: 3) {
+      and (-webkit-device-pixel-ratio: 3) 
+	  and (orientation: portrait) {
 } a.menu, a.favorite {
  font-size:100%;
  }
@@ -255,7 +256,8 @@ div.topdivide {
 @media only screen 
       and (device-width: 393px) 
       and (device-height: 852px) 
-      and (-webkit-device-pixel-ratio: 3) { 
+      and (-webkit-device-pixel-ratio: 3) 
+	  and (orientation: portrait) { 
  a.menu, a.favorite {
  font-size:100%;
  }
