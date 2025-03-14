@@ -216,11 +216,11 @@ div.topdivide {
 /* @media only screen and (min-width: 428px) { */
 /* @media only screen and (min-height: 926px) and (orientation: portrait) { */
 @media only screen 
-      and (device-width: 428px) 
-      and (device-height: 745px) 
+      and (width: 428px) 
+      and (height: 745px) 
       and (-webkit-device-pixel-ratio: 3) 
 	  and (orientation: portrait) {
- a.menu, a.favorite {
+	a.menu, a.favorite {
  font-size:100%;
  }
 
@@ -252,8 +252,8 @@ div.topdivide {
 
 /* iphone 15 */
 @media only screen 
-      and (device-width: 393px) 
-      and (device-height: 852px) 
+      and (width: 393px) 
+      and (height: 852px) 
       and (-webkit-device-pixel-ratio: 3) 
 	  and (orientation: portrait) { 
  a.menu, a.favorite {
