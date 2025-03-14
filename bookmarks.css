@@ -220,7 +220,7 @@ div.topdivide {
       and (device-height: 745px) 
       and (-webkit-device-pixel-ratio: 3) 
 	  and (orientation: portrait) {
-} a.menu, a.favorite {
+ a.menu, a.favorite {
  font-size:100%;
  }
 
