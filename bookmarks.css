@@ -223,10 +223,16 @@ div.topdivide {
 		justify-content:center;
 	}
 
-	div#left, div#right {
-		margin:0px;
-		padding:0px;
+	div#left{
+	}
+	
+	div#right {
+		padding-right:25px;
 	} 
+
+	div.leftmenu {
+		max-width:none;
+	}
 
 	div#content {	
 		font-size:100%;
@@ -255,9 +261,15 @@ div.topdivide {
 		justify-content:center;
 	}
 
-	div#left, div#right {
-		margin:0px;
-		padding:0px;
+	div#left{
+	}
+	
+	div#right {
+		padding-right:25px;
+	}
+	
+	div.leftmenu {
+		max-width:none;
 	}
 
 	div#content {	
