@@ -1,4 +1,6 @@
+/* ******************************************* */
 /* ********** BODY *************************** */
+/* ******************************************* */
 body {
  font-family:Arial,sans-serif;
  font-size:12px;
@@ -7,7 +9,9 @@ body {
  text-align:center;
 }
 
+/* ******************************************* */
 /* ********** HEADING ************************ */
+/* ******************************************* */
 h1, h2 {
   color:#000000;
   margin-bottom:0px;
@@ -16,7 +20,9 @@ h1, h2 {
 h1 {font-size:18px;margin-top:0px;}
 h2 {font-size:16px;clear:left;}
 
+/* ******************************************* */
 /* ********** IMAGES ************************* */
+/* ******************************************* */
 img {
   border:0px solid #000000;
 }
@@ -27,7 +33,9 @@ img.favicon {
   width:20px;
 }
 
+/* ******************************************* */
 /* ********** LINKS ************************** */
+/* ******************************************* */
 a:link, a:visited, a:active, a:hover {
   text-decoration:underline;
   font-weight:normal;
@@ -79,8 +87,9 @@ a.menu:link, a.menu:visited, a.favorite:link, a.favorite:visited {
  text-decoration:none; 
 }
 
-
+/* ******************************************* */
 /* ********** DIV **************************** */
+/* ******************************************* */
 div {background-color:#FFFFFF;}
 
 /* responsive layout */
@@ -117,17 +126,13 @@ div#content {
   border-left:1px solid #000000;
   border-right:1px solid #000000;
   padding:10px;
-  /* width: 100%; */
-  /* max-width: 700px; */
 }
 
 div.grid-container {
   display:grid;
-  /* grid-template-columns: auto auto auto; */
   grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
   /* justify-content:start space-evenly; */
-  /* grid-template-rows: auto auto; */
   align-content: space-evenly;
   gap:50px;
 }
@@ -139,13 +144,11 @@ div.leftmenu {
   border-bottom:2px solid #000;
   width: 100%;
   max-width: 150px;  
-  /*margin:20px 10px 20px 20px;*/
   margin:10px 0px 10px 10px;
 }
 
 /* link to top */
 div.top, div.topdivide {
-  /* display:block; */
   padding-bottom:5px;
   padding-right:5px;
   clear:left;
@@ -157,11 +160,13 @@ div.topdivide {
   border-bottom:1px solid #000;
 }
 
+
+/* ******************************************* */
+/* ********** LINK and MENU CONTAINER ******** */
+/* ******************************************* */
+
 /* standard link container */
 .linkcontainer {
-  /* width: 100%; */
-  /* max-width: 220px; */
-  /* height:190px; */
   vertical-align:top;
   padding-left:10px;
   padding-right:10px;
@@ -193,11 +198,12 @@ div.topdivide {
   text-align:center;
 }
 
+/* ******************************************* */
+/* ********** MEDIA QUERY ******************** */
+/* ******************************************* */
 
-/* ********** MEDIA QUERY ************************** */
-
-/* Styles for iPhone 15 and smaller devices */
-@media only screen and (max-width: 393px) {	  
+/* Styles for iPhone Pro Max, iPhone 15 and and smaller devices */
+@media only screen and (max-width: 428px) {	  
 	body, h1, h2 {
 		font-size:100%;
 	}
@@ -239,48 +245,7 @@ div.topdivide {
 	}	
 }
 
-/* Styles for iPhone 13 Pro Max and similar larger devices */
-@media only screen and (min-width: 394px) and (max-width: 428px) {
-	body, h1, h2 {
-		font-size:100%;
-	}	
-	
-	a.menu, a.favorite {
-		font-size:100%;
-	}
-
-	div#responsive {
-		grid-template-columns: auto auto auto;
-		justify-content:center;
-	}
-
-	div#left{
-	}
-	
-	div#right {
-		padding-right:25px;
-	}
-	
-	div.leftmenu {
-		max-width:none;
-	}
-
-	div#content {	
-		font-size:100%;
-		grid-area: 2 / 1 / 2 / span 2;
-		margin-left:10px;
-		margin-right:10px;
-	}
-
-	.linkitem {
-		padding-bottom:10px;
-	}
-
-	div.grid-container {
-		grid-template-columns: 1fr;
-	} 
-}
-
+/* Styles for iPad and similar devices */
 @media only screen and (min-width: 429px) and (max-width: 1024px) {
 	body, h1, h2 {
 		font-size:100%;
@@ -292,9 +257,8 @@ div.topdivide {
 	}
 	
 	.linkcontainer {
-		vertical-align:top;
 		padding-left:10px;
-		/* padding-right:10px; */
+		padding-right:0px;
 		margin-bottom:0px;
 	}	
 }
