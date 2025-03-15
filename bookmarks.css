@@ -198,6 +198,10 @@ div.topdivide {
 
 /* Styles for iPhone 15 and smaller devices */
 @media only screen and (max-width: 393px) {	  
+	body, h1, h2 {
+		font-size:100%;
+	}
+	
 	a.menu, a.favorite {
 		font-size:100%;
 	}
@@ -237,6 +241,10 @@ div.topdivide {
 
 /* Styles for iPhone 13 Pro Max and similar larger devices */
 @media only screen and (min-width: 394px) and (max-width: 428px) {
+	body, h1, h2 {
+		font-size:100%;
+	}	
+	
 	a.menu, a.favorite {
 		font-size:100%;
 	}
@@ -275,34 +283,18 @@ div.topdivide {
 
 @media only screen and (min-width: 429px) and (max-width: 1024px) {
 	body, h1, h2 {
-		/* font-size:100%; */
+		font-size:100%;
 	}
-	
-	a.menu, a.favorite {
-		/* font-size:100%; */
-	}
-	
+		
 	.linkitem {
-		font-size:125%;
-		padding-bottom:10px;
+		font-size:100%;
+		padding-bottom:5px;
 	}
 	
 	.linkcontainer {
-  /* width: 100%; */
-  /* max-width: 220px; */
-  /* height:190px; */
 		vertical-align:top;
-		padding-left:0px;
-		padding-right:0px;
+		padding-left:10px;
+		/* padding-right:10px; */
 		margin-bottom:0px;
-	}
-
-	div#content {	
-		/* font-size:100%; */
-		/* grid-area: 2 / 1 / 2 / span 2; */
-		margin-left:0px;
-		margin-right:0px;
-	}
-	
-	
+	}	
 }
