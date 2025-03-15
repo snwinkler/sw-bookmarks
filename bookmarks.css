@@ -105,22 +105,11 @@ div#responsive {
   place-content: end space-between;
 }
 
-/* left column */
-div#left {
+/* left and right column */
+div#left, div#right {
   background-color:#dbdbdb;
-  /* width: 100%; */
-  /* max-width: 174px; */
-  /* float:left; */
 }
 
-/* right column */
-div#right {
-  background-color:#dbdbdb;
-  /* width: 100%; */
-  /* max-width: 174px; */
-  /* float:right; */
-
-}
 /* content */
 div#content {
   border-left:1px solid #000000;
@@ -134,7 +123,7 @@ div.grid-container {
   /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
   /* justify-content:start space-evenly; */
   align-content: space-evenly;
-  gap:50px;
+  gap:10px;
 }
 
 /* left navigation bar menu container */
